@@ -1,0 +1,8 @@
+Cari Tulisan Dibawah Ini
+$("input[name='portbind']:eq(" + elementIndex + ")").prop("checked", true);
+
+Lalu Ubah Ganti Menjadi
+//$("input[name='portbind']:eq(" + elementIndex + ")").prop("checked", true);
+$("input[name='portbind']").each(function (i){
+	$(this).prop("checked", true);
+});
